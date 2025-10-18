@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TechQuest — The Science Explorer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.paypal.com/sdk/js?client-id=AWN094Iq1_otcV6ViOemcrZXO1rTfjOgjbng3r3EOOXZwkhTGlJNX-Pd1aLVaws_wbSpSlanDei1pXTP&currency=USD"></script>
+</head>
+<body>
+  <main id="app">
+    <header>
+      <h1>TechQuest — The Science Explorer</h1>
+      <div id="top-info">
+        <div id="score">Score: <span id="score-val">0</span></div>
+        <div id="coins">Coins: <span id="coins-val">0</span></div>
+      </div>
+    </header>
+
+    <div class="ad-placeholder" id="ad-top">Google Ad Placeholder (Top)</div>
+
+    <section id="game-area">
+      <div id="screen-start" class="screen">
+        <button id="btn-start">Start Game</button>
+        <p id="desc">Learn tech while playing — mobile & desktop friendly.</p>
+      </div>
+
+      <div id="screen-level" class="screen hidden">
+        <div id="level-header">Level <span id="level-num">1</span></div>
+        <div id="timer">Time: <span id="timer-val">0</span>s</div>
+        <div id="question-box">
+          <div id="question-text"></div>
+          <div id="options"></div>
+        </div>
+      </div>
+
+      <div id="screen-fact" class="screen hidden">
+        <h2>Tech Fact</h2>
+        <p id="tech-fact"></p>
+        <button id="btn-next">Next Level</button>
+      </div>
+
+      <div id="screen-gameover" class="screen hidden">
+        <h2>Game Over</h2>
+        <p>Your final score: <span id="final-score">0</span></p>
+        <button id="btn-restart">Restart</button>
+      </div>
+    </section>
+
+    <div class="ad-placeholder" id="ad-bottom">Google Ad Placeholder (Bottom)</div>
+
+    <aside id="shop">
+      <h3>Shop</h3>
+      <p>Buy 1000 Knowledge Coins — $10 (PayPal)</p>
+      <div id="paypal-button-container"></div>
+    </aside>
+
+    <footer>
+      <small>Made with ♥ to teach tech. Local progress saved in browser.</small>
+    </footer>
+  </main>
+
+  <audio id="bg-music" loop></audio>
+  <audio id="correct-sound" src="right.mp3"></audio>
+  <audio id="wrong-sound" src="wrong.mp3"></audio>
+
+  <script src="game.js"></script>
+</body>
+</html>
